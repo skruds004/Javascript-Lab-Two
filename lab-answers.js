@@ -19,17 +19,33 @@
 ////////////////////////////////
 // Fizz Buzz
 ////////////////////////////////
-let str = "";
-for(let i = 1; i <= 100; i++) {
-    if(i % 3 == 0) {
-        str += "Fizz";
-    }
-    if(i % 5 == 0) {
-        str += "Buzz";
-    }
-    if(i % 3 != 0 && i % 5 != 0) {
-            str = i;
-    }
-    console.log(str);
-    str = "";
-}
+
+// let str = "";
+// for(let i = 1; i <= 100; i++) {
+//     if(i % 3 == 0) {
+//         str += "Fizz";
+//     }
+//     if(i % 5 == 0) {
+//         str += "Buzz";
+//     }
+//     if(i % 3 != 0 && i % 5 != 0) {
+//             str = i;
+//     }
+//     console.log(str);
+//     str = "";
+// }
+
+////////////////////////////////
+// Wild Wild Life
+////////////////////////////////
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
+const sharky = ["Sharky", "shark", 20, "Left Coast"];
+const plantee = ["Plantee", "plant",  5000 , "Mordor"];
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"];
+
+plantee[2]++;
+wolfy[3] = "Gotham City";
+dart[3] = [dart[3], "Hawkins"];
+wolfy.shift();
+wolfy.unshift("Gameboy");
