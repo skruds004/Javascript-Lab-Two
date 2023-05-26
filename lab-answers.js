@@ -63,17 +63,29 @@
 // Methods Revisited
 ////////////////////////////////
 
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-console.log(favMovies.indexOf("Titanic"));
-favMovies.sort();
-favMovies.pop();
-favMovies.push("Guardians of the Galaxy");
-favMovies.reverse();
-favMovies.shift();
-favMovies.unshift("The Godfather");
-favMovies.splice(favMovies.indexOf("Django Unchained"), 1, "Avatar");
-let slicedMovies = favMovies.slice(parseInt(favMovies.length/2), favMovies.length);
-console.log(slicedMovies);
-console.log(favMovies);
-console.log(favMovies.indexOf("Fast and Furious"));
+// console.log(favMovies.indexOf("Titanic"));
+// favMovies.sort();
+// favMovies.pop();
+// favMovies.push("Guardians of the Galaxy");
+// favMovies.reverse();
+// favMovies.shift();
+// favMovies.unshift("The Godfather");
+// favMovies.splice(favMovies.indexOf("Django Unchained"), 1, "Avatar");
+// let slicedMovies = favMovies.slice(parseInt(favMovies.length/2), favMovies.length);
+// console.log(slicedMovies);
+// console.log(favMovies);
+// console.log(favMovies.indexOf("Fast and Furious"));
+
+////////////////////////////////
+// Where is Waldo
+////////////////////////////////
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+
+whereIsWaldo.splice(1, 1);
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo);
