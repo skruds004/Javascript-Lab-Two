@@ -169,3 +169,8 @@ for (let i = 0; i < thomsCloset.length; i++) {
 
 let randomNum = Math.floor(Math.random()*3);
 console.log("You will be wearing a " + outfits[randomNum][0] + ", " + outfits[randomNum][1] + " and " + outfits[randomNum][2]);
+
+//// Dirty Laundry ////
+for(const laundry of kristynsCloset) {
+    console.log("WHIRR: Now washing: " + laundry);
+}
