@@ -158,3 +158,5 @@ const kristynsCloset = [
   //// Alien Attire ////
   let kristynsShoe = kristynsCloset.splice(0,1);
   thomsCloset[2].push(kristynsShoe[0]);
+
+  //// Dress Us Up ////
