@@ -134,8 +134,8 @@ const kristynsCloset = [
     "marshmallow peeps"
   ];
   
-  // Thom's closet is more complicated. Check out this nested data structure!!
-  const thomsCloset = [
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
     [
       // These are Thom's shirts
       "grey button-up",
@@ -155,8 +155,17 @@ const kristynsCloset = [
     ]
   ];
 
-  //// Alien Attire ////
-  let kristynsShoe = kristynsCloset.splice(0,1);
-  thomsCloset[2].push(kristynsShoe[0]);
+//// Alien Attire ////
+let kristynsShoe = kristynsCloset.splice(0,1);
+thomsCloset[2].push(kristynsShoe[0]);
 
-  //// Dress Us Up ////
+//// Dress Us Up ////
+let outfits = [[],[],[]];
+for (let i = 0; i < thomsCloset.length; i++) {
+    for (let j = 0; j < 3; j++) {
+        outfits[i].push(thomsCloset[j][i]);
+    }
+}
+
+let randomNum = Math.floor(Math.random()*3);
+console.log("You will be wearing a " + outfits[randomNum][0] + ", " + outfits[randomNum][1] + " and " + outfits[randomNum][2]);
