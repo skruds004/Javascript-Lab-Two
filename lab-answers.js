@@ -174,3 +174,8 @@ console.log("You will be wearing a " + outfits[randomNum][0] + ", " + outfits[ra
 for(const laundry of kristynsCloset) {
     console.log("WHIRR: Now washing: " + laundry);
 }
+
+//// Inventory ////
+for(let i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i]);
+}
