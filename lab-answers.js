@@ -117,6 +117,44 @@
 ////////////////////////////////
 // Find the Median
 ////////////////////////////////
-const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
-nums.sort((a,b) => a - b);
-console.log(nums[Math.floor(nums.length/2)]);
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+// nums.sort((a,b) => a - b);
+// console.log(nums[Math.floor(nums.length/2)]);
+
+////////////////////////////////
+// Kristyn + Thom Problems
+////////////////////////////////
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  //// Alien Attire ////
+  let kristynsShoe = kristynsCloset.splice(0,1);
+  thomsCloset[2].push(kristynsShoe[0]);
